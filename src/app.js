@@ -62,7 +62,7 @@ app.get('/covid19',(req,res)=>{
             })
         }
         
-        const a=data.find(f=>f.city.toLowerCase()==city.toLowerCase());
+        const a=data.find(f=>f.city.toLowerCase()==city.replace(/\s+/g,'').toLowerCase());
         if(a){
             console.log(a)
             res.send(a)
