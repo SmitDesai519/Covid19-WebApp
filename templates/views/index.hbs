@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Covid19 Data</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="/js/app.js"></script>
+    </head>
+    <body>
+        <div class="main-content">
+        {{>header}}<br>
+        <p>Search covid19 case </p>
+        <input type="text" id="city" placeholder="Enter City">
+        <button id="click" onclick="getCity()">Search</button>
+        <div id="output"></div>
+        </div>
+        {{>footer}}
+    </body>
+</html>
